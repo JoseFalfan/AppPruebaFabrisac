@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ingresar</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full" class="ion-margin-top">
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" required [(ngModel)]="ModelUser" [ngModelOptions]="{standalone: true}"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" required [(ngModel)]="ModelPassword" [ngModelOptions]="{standalone: true}"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col class="ion-margin-top">
+        <ion-button type="submit" [routerLink]="['/home']" color="success" expand="block">Iniciar Sesion</ion-button>
+        <a [routerLink]="['/forgot-password']" class="small-text">Olvidaste tu contraseña?</a>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

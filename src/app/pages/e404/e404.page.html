@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Aqui no hay nada
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center ">
+  <ion-img src="assets/icon/e404.svg"></ion-img>
+  <div class="ion-padding">
+    <strong>No se ha encontrado la pagina.</strong>
+  </div>
+  <div class="ion-padding">
+      <ion-button expand="block" color="success" [routerLink]="['/home']">
+        <ion-icon slot="start" name="home" position ></ion-icon>
+        volver
+      </ion-button> 
+  </div>
+
+</ion-content>
