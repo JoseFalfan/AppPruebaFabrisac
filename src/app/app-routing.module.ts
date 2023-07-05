@@ -5,7 +5,7 @@ import { DbService } from './services/db.service';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'intro-page',
     pathMatch: 'full'
   },
   {
@@ -36,6 +36,11 @@ const routes: Routes = [
   {
     path: 'cutters',
     redirectTo: 'cutters',
+    pathMatch: 'full'
+  },
+  {
+    path: 'intro-page',
+    redirectTo: 'intro-page',
     pathMatch: 'full'
   },
   {
@@ -74,6 +79,10 @@ const routes: Routes = [
   {
     path: 'e404',
     loadChildren: () => import('./pages/e404/e404.module').then( m => m.E404PageModule)
+  },
+  {
+    path: 'intro-page',
+    loadChildren: () => import('./pages/intro-page/intro-page.module').then( m => m.IntroPagePageModule)
   }
 ];
 
