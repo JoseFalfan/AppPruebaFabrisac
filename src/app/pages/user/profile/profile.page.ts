@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilePage implements OnInit {
 
-  constructor() { }
+  character : any;
+
+  constructor() { 
+    
+  }
 
   ngOnInit() {
+    this.character = history.state.character;
   }
 
 }

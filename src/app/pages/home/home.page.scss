@@ -1,3 +1,48 @@
-.logo{
-    background-color: aqua;
+ion-content {
+    position: relative;
 }
+
+
+.container {
+    border-radius: 30px;
+    border-style: solid;
+    border-color: rgb(3, 252, 3);
+    border-width: 1px ;
+    height: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h1{
+    text-align: center;
+    border-radius: 20px;
+
+    
+}
+
+ion-item {
+    border-style: solid;
+    border-color: rgb(3, 252, 3);
+    border-width: 1px ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    padding: 5%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container-buttons {
+    position: absolute;
+    bottom: 0%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px ;
+    border-color: rgb(3, 252, 3);
+    height: auto;
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+}
+

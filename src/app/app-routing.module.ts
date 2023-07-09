@@ -24,6 +24,11 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'my-user',
+    redirectTo: 'my-user',
+    pathMatch: 'full'
+  },
+  {
     path: 'forgot-password',
     redirectTo: 'forgot-password',
     pathMatch: 'full'
@@ -73,8 +78,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule), 
-    canActivate: [DbService]
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'e404',
@@ -83,7 +87,12 @@ const routes: Routes = [
   {
     path: 'intro-page',
     loadChildren: () => import('./pages/intro-page/intro-page.module').then( m => m.IntroPagePageModule)
+  },
+  {
+    path: 'my-user',
+    loadChildren: () => import('./pages/user/my-user/my-user.module').then( m => m.MyUserPageModule)
   }
+
 ];
 
 @NgModule({

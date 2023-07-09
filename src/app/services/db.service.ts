@@ -9,8 +9,8 @@ export class DbService {
   constructor(private router: Router) { }
 
   canActivate() {
-    this.router.navigate(['login'])
-    return false;
+    this.router.navigate(['home'])
+    return true;
   }
 
 }

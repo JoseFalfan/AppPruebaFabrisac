@@ -5,11 +5,11 @@ describe('IntroPagePage', () => {
   let component: IntroPagePage;
   let fixture: ComponentFixture<IntroPagePage>;
 
-  beforeEach(async(() => {
+  beforeEach(async() => {
     fixture = TestBed.createComponent(IntroPagePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
